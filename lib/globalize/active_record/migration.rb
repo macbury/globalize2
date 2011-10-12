@@ -20,7 +20,7 @@ module Globalize
           end
           t.timestamps
         end
-
+        sleep 10000
         self.connection.add_index(
           translation_table_name, 
           "#{table_name.sub(/^#{table_name_prefix}/, "").singularize}_id",
